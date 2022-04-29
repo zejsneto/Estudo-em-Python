@@ -1,5 +1,5 @@
 #Estudo em Python
-#Lab 1
+#Lab 2
 
 #Exercício 1 
 #Faça um programa para exibir a idade de uma pessoa tendo como entrada a sua faixa etária, de acordo com a tabela abaixo:
