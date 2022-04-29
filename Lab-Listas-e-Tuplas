@@ -1,0 +1,68 @@
+#Estudo em Python
+#Lab Listas e Tuplas
+
+# Exercicio 1
+# Faça um programa que leia, um a um, modelos de cinco carros(exemplos: FUSCA, GOL, VECTRA etc) e os guarde em uma mesma lista. Leia(um a um) uma outra lista com o consumo desses carros, isto é, quantos quilômetros cada um desses carros faz com um litro de combustível. Calcule e mostre:
+# - O modelo do carro mais econômico
+# - Quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma distância de 1000 quilômetros.
+carros = []
+consumo = []
+for i in range(5):
+  carros.append(input())
+for i in range(5):
+  consumo.append(float(input()))
+a = consumo.index(max(consumo))
+
+print('O carro mais econômico é o', carros[a])
+for i in range(5):
+  print('O carro', carros[i], 'consome', round(1000/(consumo[i])), 'litros para andar 1000 km')
+
+#Exercício 2
+# Crie um programa que leia números inteiros do usuário até que o número 0 seja inserido. Uma vez que todos os números inteiros tenham sido lidos, seu programa deve exibir todos os números negativos, seguidos por todos os números positivos. Dentro de cada grupo, os números devem ser exibidos na mesma ordem em que foram inseridos pelo usuário
+
+numero = []
+pos = []
+neg = []
+
+while True:
+  num = int(input(''))
+  if num == 0:
+    break
+  elif num > 0:
+    pos.append(num)
+  elif num < 0:
+    neg.append(num)
+
+for i in neg:
+  numero.append(i)
+for i in pos:
+  numero.append(i)
+
+  
+print(numero)
+
+#Exercício 3
+# Faça um Programa que leia 20 números inteiros e armazene-os em uma lista. Armazene os números pares na lista par e os números ímpares na lista impar. Imprima as três listas no final.
+
+pares = []
+impares = []
+
+for i in range(20):
+  a = int(input())
+  if a%2==0:
+    pares.append(a)
+  else: impares.append(a)
+numeros = pares+impares
+print(pares)
+print(impares)
+print(numeros)
+
+#Exercício 4
+# Escreva uma função que recebe uma lista de números inteiros e retorne uma nova lista que contém o quadrado de cada um desses números. Você só precisa entregar o código da função.
+
+def armazena(lista):
+  nova_lista = []
+  for i in (lista):
+    a=i**2
+    nova_lista.append(a)
+  return(nova_lista)
