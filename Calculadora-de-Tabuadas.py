@@ -8,3 +8,8 @@ while (contador <= limite):
   print('{0} x {1} = {2}'.format(numero,contador,tabuada))
   contador = contador + 1
 
+#PRINT DE TABUADAS EM PYTHON
+for x in range(1,11):
+  print("Tabuada do ", x)
+  for y in range(1,11):
+    print(x, "x", y, " = ", x * y)
